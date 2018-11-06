@@ -79,8 +79,7 @@ def General_Huckel_Solver():
     for item in Degeneracy_count():
         csv.writer(f).writerow(item)
     csv.writer(f).writerow([evalue_sum_statement])   
-    f.close()
-    
+    f.close()    
 
 
 def Huckel_Solver_linear_n_polyene():
@@ -113,7 +112,6 @@ def Huckel_Solver_linear_n_polyene():
         base_matrix_linear[i-1,i] = beta 
         
     return base_matrix_linear
-
 
 
 def Huckel_Solver_cyclic_n_polyene():
@@ -154,8 +152,6 @@ def Huckel_Solver_cyclic_n_polyene():
     return base_matrix_cyclic
 
 
-
-
 def get_evals():
     """ Return the eigenvalues of a matrix."""
     
@@ -185,6 +181,7 @@ def Degeneracy_count():
     degeneracies_sorted = sorted(degeneracies)
     degen_final = degeneracy_base + degeneracies_sorted
     return degen_final
+    
     
 def Huckel_Solver_Platonic_Solid():
     
