@@ -55,6 +55,7 @@ def General_Huckel_Solver():
         elif problem_type == "exit":
             sys.exit()
         else:
+            print()
             print('You should input "linear", "cyclic" or "Platonic solid." '
                   'To exit the program, type exit.')
     
@@ -92,6 +93,7 @@ def Huckel_Solver_linear_n_polyene():
             n = int(num)
             break
         except ValueError:
+            print()
             print("Please enter an integer number of carbons.")
         
     base_matrix_linear = np.zeros((n, n))
@@ -124,6 +126,7 @@ def Huckel_Solver_cyclic_n_polyene():
             n = int(num)
             break
         except ValueError:
+            print()
             print("Please enter an integer number of carbons.")
             
     base_matrix_cyclic = np.zeros((n, n))
