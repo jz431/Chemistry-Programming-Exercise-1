@@ -86,6 +86,7 @@ def Huckel_Solver_linear_n_polyene():
     # Exception handling to ensure that when a physically insignificant number
     # of carbons (non-integer) are inputted, the program does not crash.
     while True:
+        print()
         num = input("How many carbons in your linear poly-ene? ")
         try:
             n = int(num)
@@ -117,6 +118,7 @@ def Huckel_Solver_cyclic_n_polyene():
     # Exception handling to ensure that when a physically insignificant number
     # of carbons (non-integer) are inputted, the program does not crash.
     while True:
+        print()
         num = input("How many carbons in your cyclic poly-ene? ")
         try:
             n = int(num)
@@ -185,6 +187,7 @@ def Huckel_Solver_Platonic_Solid():
     beta = -1
     
     while True:
+        print()
         shape = input("What kind of shape do you have? ")
         
         # Forms the Huckel matrix for the tetrahedron.
