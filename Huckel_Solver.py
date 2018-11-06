@@ -270,6 +270,7 @@ def Huckel_Solver_Platonic_Solid():
             sys.exit()
             
         else:
+            print()
             print("Your shape should be a tetrahedron, cube, octahedron "
                   "or dodecahedron. Type none to quit.")
         
