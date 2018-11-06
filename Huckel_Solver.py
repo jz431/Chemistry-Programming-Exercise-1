@@ -68,8 +68,10 @@ def General_Huckel_Solver():
     
     final_list = Degeneracy_count()
     
+    print()
     for i in final_list:
         print(i)
+    print()
     print(evalue_sum_statement)
     
     # Writes the Huckel energy levels and their degeneracies to a .csv file.
